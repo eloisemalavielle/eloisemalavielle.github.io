@@ -1,0 +1,218 @@
+
+@font-face {
+    font-family: "beauxarts80";
+    src: url(beauxarts80.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Frutiger";
+    src: url(Frutiger.ttf),
+    url(Frutiger_bold.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.notMoved{
+    background: rgb(2, 82, 64)
+}
+
+
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(0, 38, 30);
+    color: #ffffff;
+    margin: 0;
+    /* transition: background-color 0.5s ease;
+    /* background-image: url("DSCN4817.JPG"); */
+    /* background-size: cover;
+    min-height:99vh;
+    display: grid;
+    place-items: center;
+    background: #000;
+    cursor:move;
+    overflow: hidden; */ 
+    
+
+}
+
+  .notMoved{
+      transition: background 1s;
+  }
+  /* canvas{
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    width:  clamp(320px, 80vh, 90vw)!important; 
+    height:auto!important;
+    aspect-ratio: 1/1;
+    transition: 0.3s; */
+  /* } */
+
+.cv:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+h1 {
+    font-weight: 400;
+}
+h2 {
+    font-family: "beauxarts80", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    color: #fcfcfc;
+}
+
+.header {
+    font-family: "beauxarts80", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    height: 140px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4920168751094187) 35%, rgba(2, 0, 36, 1) 100%);
+    z-index: 1000;
+}
+
+
+
+
+.logonom {
+    display: flex;
+    align-items: last baseline;
+
+}
+
+.logovache {
+    min-width: 64px;
+}
+
+.header a {
+    margin-right: 24px;
+}
+
+.header-nav {
+    text-align: right;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    padding-left: 12px;
+    padding-right: 12px;
+    gap: 12px;
+  
+
+}
+
+aside {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 164px;
+    height: calc(100vh - 164px);
+    /* = H de l'écran - H de 100px du header - padding de 12px X 2*/
+}
+
+.recouvrement-noir {
+    display: none;
+
+    /* à mettre aux enfants de .recouvrement-noir */
+    padding-left: 64px;
+    text-align: left;
+}
+
+.menu-burger-image {
+    display: block;
+}
+
+.recouvrement-burger {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88px;
+    /* width: calc(100vw - 12px); */
+    /* height: 100%; */
+    /* background-color: #000000; */
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    padding-left: 0px;
+    z-index: 1000;
+    font-family: "beauxarts80", sans-serif;
+    font-weight: 400;
+    font-size: 1.25em;
+}
+
+
+/* .background {
+    background-image: url("DSCN4817.JPG");
+    /* background-attachment: absolute; */
+    /* z-index: -1;
+} */ 
+
+.projets {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    color: #000000;
+}
+
+.projet {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 12px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.a-propos {
+    font-family: "Frutiger", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 12px;
+    color: #ffffff;
+    background-color: none;
+}
+
+/* Pour tablette et écran moyen */
+@media (min-width: 600px) {
+    .header {
+        font-size: 1.5em;
+    }
+
+    .projets {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Pour grand écran */
+@media (min-width: 1024px) {
+    .projets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
