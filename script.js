@@ -44,3 +44,9 @@ const move = e => {
 
 document.addEventListener('mousemove',move);
 document.addEventListener('mouseenter',move);
+
+function playCowSound() {
+    const cowSound = document.getElementById('cowSound');
+    cowSound.currentTime = 0; // Remet le son au début à chaque clic
+    cowSound.play(); // Joue le son
+}

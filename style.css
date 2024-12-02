@@ -6,13 +6,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: "Frutiger";
-    src: url(Frutiger.ttf),
-    url(Frutiger_bold.ttf);
-    font-weight: 400;
-    font-style: normal;
-}
 
 .notMoved{
     background: rgb(2, 82, 64)
@@ -21,7 +14,7 @@
 
 
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(0, 38, 30);
     color: #ffffff;
     margin: 0;
@@ -37,6 +30,7 @@ body {
     
 
 }
+
 
   .notMoved{
       transition: background 1s;
@@ -59,6 +53,17 @@ img {
     height: auto;
 }
 
+.video {
+    width: 1fr;
+    height: auto;
+    display: block;
+    rotate: 270deg;
+    max-height: calc(100vh - 164px); /* Même hauteur max que pour les images */
+    object-fit: cover; /* Ajuste le contenu pour remplir l'espace */
+    
+    
+}
+
 a {
     text-decoration: none;
     color: #ffffff;
@@ -67,6 +72,7 @@ a {
 
 h1 {
     font-weight: 400;
+    padding-left: 24px;
 }
 h2 {
     font-family: "beauxarts80", sans-serif;
@@ -75,7 +81,65 @@ h2 {
     text-decoration-line: none;
     text-decoration-style: solid;
     color: #fcfcfc;
+    padding-left: 20px;
+    text-align: center;
 }
+
+h3 {
+    font-family: "beauxarts80", sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    color: #fcfcfc;
+    margin: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 22px;
+
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 10px;
+}
+h5 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: italic;
+    padding-left: 0px;
+    writing-mode: sideways-lr;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: space-betwen;
+    top: 164px;
+    /* height: calc(100vh - 164px); */
+    padding-top: 0;
+}
+.hover-text {
+    position: absolute;
+    bottom: 70px; /* Positionne le texte au-dessus de l'élément */
+    left: 18px;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0); /* Fond semi-transparent */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden; /* Masqué par défaut */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.bouton-retour:hover .hover-text{
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .header {
     font-family: "beauxarts80", sans-serif;
@@ -99,11 +163,18 @@ h2 {
 .logonom {
     display: flex;
     align-items: last baseline;
+    
 
 }
 
 .logovache {
     min-width: 64px;
+    max-width: 64px;
+    transition: transform 0.3s ease;
+}
+    
+.logonom:active .logovache {
+     transform: scale(1.1) rotate(15deg);
 }
 
 .header a {
@@ -113,6 +184,17 @@ h2 {
 .header-nav {
     text-align: right;
 }
+.shake {
+    writing-mode: sideways-lr;
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 164px;
+    height: calc(100vh - 164px);
+    padding-top: 0;
+}
+
 
 
 
@@ -180,7 +262,7 @@ aside {
 }
 
 .projet {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
@@ -189,15 +271,75 @@ aside {
     background-color: rgba(0, 0, 0, 0);
 }
 
+
+
 .a-propos {
     font-family: "Frutiger", sans-serif;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 3(1fr);
     gap: 12px;
     margin: 12px;
     color: #ffffff;
     background-color: none;
 }
+
+.presentation {
+    display :grid;
+    grid-template-columns : 1fr;
+    gap:15px;
+    padding-bottom: 15px;
+}
+
+.presentation p {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-size: 12px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding-left: 10px;
+    text-align: left;
+    line-height: 19px;
+
+}
+
+.image-presentation img {
+    width: auto;
+    height: auto;
+    max-height: calc(100vh - 164px);
+}
+
+.col-2-tiers {
+    grid-column: span 1;
+}
+
+.col-3-tiers {
+    grid-column: span 3;
+}   
+
+.grille-1-colonne{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:15px;
+}
+.grille-2-colonnes{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:15px;
+}
+.grille-3-colonnes{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:15px;
+}
+.sketch{
+    padding-bottom: 13px;
+}
+
+
+
+
+
+
+
 
 /* Pour tablette et écran moyen */
 @media (min-width: 600px) {
@@ -208,11 +350,44 @@ aside {
     .projets {
         grid-template-columns: repeat(2, 1fr);
     }
+    .presentation {
+        grid-template-columns : repeat(2, 1fr);
+    }
+    .col-2-tiers {
+        grid-column: span 2;
+    }
+    /* .col-3-tiers {
+        grid-column: span 1;
+    } */
+}
+
+#shake:hover{
+    animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 /* Pour grand écran */
 @media (min-width: 1024px) {
     .projets {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .presentation {
+        grid-template-columns : repeat(3, 1fr);
     }
 }

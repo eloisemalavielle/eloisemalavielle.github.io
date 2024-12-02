@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloïse Malavielle - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="vachelino.svg" />
+</head>
+
+<body class="notMoved">
+    <header class="header">
+        <div class="logonom" href="index.html" >
+            <div class="logo-container" onclick="playCowSound()">
+                <img class="logovache" src="vachelino.svg" alt="logovache" />
+            </div>
+            <a href="index.html">
+                <h1>
+                    éloïse<br>Malavielle
+                </h1>
+            </a>
+            <audio id="cowSound" src="cow-moo.mp3"></audio>
+        </div>
+      
+        <nav class="header-nav">
+            <a href="https://instagram.com/art_retardement">instagram</a>
+            <a href="en/index.html">EN</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <aside>
+            <div class="menu-burger-div">
+                <img class="menu-burger-image" onclick="afficher_menu()" src="menuburger.svg" alt="menu-burger"
+                    id="menu-burger">
+                <div class="recouvrement-noir" id="recouvrement-noir" onmouseleave="masquer_menu()">
+                    <a href="a-propos.html">à propos</a>
+                    <br>
+                    <a href="contact.html">contact</a>
+                    <br>
+                    <a href="credits.html">crédits</a>
+                </div>
+            </div>
+            <!-- <div class="retour-droits" >
+                <a href="index.html">
+                
+                </a>   
+            </div> -->
+
+            <a class="bouton-retour" href="index.html">
+                <img id="shake" src="retour-doigt - 1.svg" alt="retour">
+                <div class="retour-droits hover-text"><h5>accueil</h5></div>
+            </a>
+               
+
+            
+        </aside>
+
+
+        <div class="presentation">
+            <div class="texte-presentation">
+                <h3>Coffret sur l'artiste contemporaine Wangechi Mutu</h3>
+                <h4>éditions 3 (27,5 x 20 cm) + 18,5 x 12,3 cm<br>coffret monté 29,5 x 23,2 x 14,5 cm<br>affiches 3 (40 x
+                    60) cm</h4>
+                <p>création d’un objet éditorial et sculptural, sur le travail de l’artiste kényane, en trois axes:</p>
+                <p>- Fusion : créatures de papiers et d’encres</p>
+                <p>- Ève : la figure révistée</p>
+                <p>- Bronze : mythes dans la nature</p>
+                <p>Le tout accompagnée d’un livre de références artistiques et de trois posters associés</p>
+            </div>
+            
+            <div class="image1">
+                <img src="wangechimutu/wangechimutu0.JPG" alt="image Wangechi Mutu">
+            </div>
+            <div class="image1">
+                <img src="wangechimutu/wangechimutu8.JPG" alt="image Wangechi Mutu">
+            </div>
+            <div class="image1">
+                <img src="wangechimutu/wangechimutu2.JPG" alt="image Wangechi Mutu">
+            </div>
+            <div class="image1">
+                <img src="wangechimutu/wangechimutu9.JPG" alt="image Wangechi Mutu">
+            </div>
+            <div class="image1">
+                <img src="wangechimutu/wangechimutu10.JPG" alt="image Wangechi Mutu">
+            </div>
+            <!-- <div class="image1">
+                <img src="images/wangechimutu/wangechimutu6.jpg" alt="image Wangechi Mutu">
+            </div>
+            <div class="image1">
+                <img src="images/wangechimutu/wangechimutu7.jpg" alt="image Wangechi Mutu">
+            </div>
+            <div class="image1">
+                <img src="images/wangechimutu/wangechimutu5.jpg" alt="image Wangechi Mutu">
+            </div>
+             -->
+           <div class="wangechimutu grille-1-colonne col-2-tiers">
+                <img src="wangechimutu/wangechimutu6.jpg" alt="poster1">
+                <img src="wangechimutu/wangechimutu7.jpg" alt="poster2">
+           </div>
+           <div class="wangechimutu grille-1-colonne">
+                <img src="wangechimutu/wangechimutu5.jpg" alt="poster3">
+                <img src="wangechimutu/wangechimutu4.jpeg" alt="calligraphie">
+
+           </div>
+            <!-- <div class="video grille-1-colonne">
+                <video autoplay loop muted src="images/wangechimutu/wangechimutuvideo1.mp4"></video>
+                <video autoplay loop muted src="images/wangechimutu/wangechimutuvideo2.mp4"></video>
+                <video autoplay loop muted src="images/wangechimutu/wangechimutuvideo3.mp4"></video>
+                <video autoplay loop muted src="images/wangechimutu/wangechimutuvideo4.mp4"></video>
+            </div> -->
+        
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

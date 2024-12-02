@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eloïse Malavielle - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logovache.svg" />
+    <link rel="icon" type="image/png" href="vachelino.svg" />
 </head>
 
 <body class="notMoved">
     <header class="header">
-        <div class="logonom" href="index.html">
-            <a href="index.html">
-                <img class="logovache" src="logovache.svg" alt="logovache" />
-            </a>
+        <div class="logonom" href="index.html" >
+            <div class="logo-container" onclick="playCowSound()">
+                <img class="logovache" src="vachelino.svg" alt="logovache" />
+            </div>
             <a href="index.html">
                 <h1>
                     éloïse<br>Malavielle
                 </h1>
             </a>
+            <audio id="cowSound" src="cow-moo.mp3"></audio>
         </div>
+      
         <nav class="header-nav">
             <a href="https://instagram.com/art_retardement">instagram</a>
             <a href="en/index.html">EN</a>
@@ -46,8 +48,9 @@
             </div>
 
             <a class="bouton-retour" href="index.html">
-                <img src="retour.svg" alt="retour"></a>
-
+                <img id="shake" src="retour-doigt - 1.svg" alt="retour">
+                <div class="retour-droits hover-text"><h5>accueil</h5></div>
+            </a>
 
         </aside>
 
@@ -57,80 +60,77 @@
 
 
         <div class="projets">
-            <a class="projet" href="le-livre-d'artiste.html">
-                <img src="images/3:4- coffret.webp" alt="image Wangechi Mutu">
+            <a class="projet" href="le-livre-d-artiste.html">
+                <img src="images/wangechimutu34.png" alt="image Wangechi Mutu">
                 <div>
                     <h2>Coffret sur Wangechi Mutu</h2>
-                    <p>#design graphique</p>
-                    <p>#livre d'artiste</p>
+                   
                 </div>
             </a>
 
             <a class="projet" href="specimen.html">
-                <img src="images/3:4infini.webp" alt="image spécimen">
+                <img src="images/infini34.png" alt="image spécimen">
                 <div>
-                    <h2>Spécimen Typographique</h2>
-                    <p>#typogrphie</p>
+                    <h2>Spécimen Typographique<br>l'Infini</h2>
+                    
                 </div>
             </a>
 
-            <a class="projet" href="bipiste.html">
-                <img src="images/3:4 bipiste.webp" alt="image bipiste">
+            <a class="projet" href="photo.html">
+                <img src="images/photo34.png" alt="image 8preuves">
                 <div>
-                    <h2>Le Bipiste</h2>
-                    <p>#design graphique</p>
-                </div>
-
-            </a>
-
-            <a class="projet" href="magazine.html">
-                <img src="images/3:4 patouë.webp" alt="image Patouë">
-                <div>
-                    <h2>Patouë</h2>
-                    <p>#typographie</p>
-                    <p>#fanzine</p>
-                </div>
-            </a>
-
-            <a class="projet" href="8preuves.html">
-                <img src="images/3:4 8preuves.webp" alt="image 8preuves">
-                <div>
-                    <h2>8 preuves</h2>
-                    <p>#photographie</p>
-                </div>
-            </a>
-
-            <a class="projet" href="pokemon.html">
-                <img src="images/3:4 pokemon.webp" alt="image série pokémon">
-                <div>
-                    <h2>Les Pokémons envahissent l'art</h2>
-                    <p>#peinture</p>
+                    <h2>Clichés</h2>
+                 
                 </div>
             </a>
 
             <a class="projet" href="carnets.html">
-                <img src="images/3:4 carnet.webp" alt="image carnet">
+                <img src="images/carnets34-min.png" alt="image carnet">
                 <div>
                     <h2>Carnets graphiques</h2>
-                    <p>#dessin</p>
-                    <p>#collage</p>
+                   
                 </div>
 
             </a>
 
             <a class="projet" href="frites.html">
-                <img src="images/3_4 frite.webp" alt="image frites">
+                <img src="images/frite34.png" alt="image frites">
                 <div>
                     <h2>Affiche fictive pour le Championnat Mondial de la Frite</h2>
-                    <p>#design graphique</p>
+                
+                </div>
+            </a>
+
+            <a class="projet" href="bipiste.html">
+                <img src="images/bipiste34.png" alt="image bipiste">
+                <div>
+                    <h2>Le Bipiste</h2>
+                 
+                </div>
+
+            </a>
+
+            <a class="projet" href="magazine.html">
+                <img src="images/patoue34.png" alt="image Patouë">
+                <div>
+                    <h2>Patouë</h2>
+                    
+                </div>
+            </a>
+
+            <a class="projet" href="pokemon.html">
+                <img src="images/pokemon34.png" alt="image série pokémon">
+                <div>
+                    <h2>Les Pokémons<br>envahissent l'art</h2>
+                   
                 </div>
             </a>
 
             <a class="projet" href="serigraphies.html">
-                <img src="images/3:4serigraphie.webp" alt="image serigraphie">
+                <img src="images/serigraphie34.png" alt="image serigraphie">
                 <div>
-                    <h2>Expérimenation sérigraphie</h2>
-                    <p>#sérigraphie</p>
+                    <h2>Expérimenations en sérigraphie</h2>
+                
                 </div>
             </a>
 

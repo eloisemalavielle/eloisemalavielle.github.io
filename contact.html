@@ -6,42 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eloïse Malavielle - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="logovache.svg" />   
+    <link rel="icon" type="image/png" href="vachelino.svg" />
 </head>
 
 <body>
     <header class="header">
-        <div class="logonom" href="index.html">
-            <a href="index.html">
-                <img class="logovache" src="logovache.svg" alt="logovache" />
-            </a>
+        <div class="logonom" href="index.html" >
+            <div class="logo-container" onclick="playCowSound()">
+                <img class="logovache" src="vachelino.svg" alt="logovache" />
+            </div>
             <a href="index.html">
                 <h1>
-                    Eloïse<br />Malavielle
+                    éloïse<br>Malavielle
                 </h1>
             </a>
+            <audio id="cowSound" src="cow-moo.mp3"></audio>
         </div>
+      
         <nav class="header-nav">
             <a href="https://instagram.com/art_retardement">instagram</a>
-            <a href="english.html">EN</a>
+            <a href="en/index.html">EN</a>
         </nav>
+        
     </header>
 
     <main>
         <aside>
+
+
+
             <div class="menu-burger-div">
-                <img class="menu-burger-image" src="menuburger.svg" alt="menu-burger">
-                <div class="recouvrement-noir">
+                <img class="menu-burger-image" onclick="afficher_menu()" src="menuburger.svg" alt="menu-burger"
+                    id="menu-burger">
+                <div class="recouvrement-noir" id="recouvrement-noir" onmouseleave="masquer_menu()">
                     <a href="a-propos.html">à propos</a>
                     <br>
                     <a href="contact.html">contact</a>
                     <br>
-                    <a href="crédits.html">crédits</a>
+                    <a href="credits.html">crédits</a>
                 </div>
-            </div> 
-              
+            </div>
+
             <a class="bouton-retour" href="index.html">
-                <img src="retour.svg" alt="retour"></a>
+                <img id="shake" src="retour-doigt - 1.svg" alt="retour">
+                <div class="retour-droits hover-text"><h5>accueil</h5></div>
+            </a>
 
 
         </aside>
+
+        
+
+        </aside>
+        <div class="presentation">
+            <!-- <h2>à propos</h2> -->
+            <p>Si vous souhaitez en voir plus, je vous invite à vous rendre sur mon <a href="https://instagram.com/art_retardement" target="_blank" class="compte instagram">instagram.<br></a>Si vous souhaitez en savoir plus, je vous invite à regarder mon <a href="CV Eloïse MALAVIELLE 2023-2024.pdf" target="_blank" class="cv-link">C.V.</a><br> Et si vous voulez en discuter, n'hésitez pas à m'envoyer un <a href="mailto:loiz.malavielle@orange.fr">email</a>.</p>
+            
+        </div>
+            
+
+    </main>
+    <script src="script.js"></script>
+</body> 
+</html>
