@@ -6,6 +6,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "DINdong";
+    src: url(DINdong.otf);
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .notMoved{
     background: rgb(2, 82, 64)
@@ -14,7 +21,7 @@
 
 
 body {
-    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:"DINdong", Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: rgb(0, 38, 30);
     color: #ffffff;
     margin: 0;
@@ -95,24 +102,27 @@ h3 {
     margin: 0px;
     padding-left: 10px;
     padding-top: 10px;
-    padding-bottom: 22px;
+    padding-bottom: 10px;
 
 }
 
 h4 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "DINdong", Courier, monospace;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     font-style: italic;
     padding-left: 10px;
+    line-height: 20px;
 }
 h5 {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "DINdong", Courier, monospace;
     font-weight: 400;
     font-size: 12px;
     font-style: italic;
     padding-left: 0px;
-    writing-mode: sideways-lr;
+    inline-size: fit-content;
+    transform: rotate(-90deg);
+    /* writing-mode: sideways-lr; */
     display: flex;
     position: sticky;
     flex-direction: column;
@@ -120,6 +130,16 @@ h5 {
     top: 164px;
     /* height: calc(100vh - 164px); */
     padding-top: 0;
+    margin-left:12px;
+}
+h6 {
+    font-family: "DINdong", Courier, monospace;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin : 20px;
+    padding:0px;
+    text-size-adjust: auto;
 }
 .hover-text {
     position: absolute;
@@ -179,10 +199,16 @@ h5 {
 
 .header a {
     margin-right: 24px;
+    min-width: 64px;
+    max-width: 64px;
 }
 
 .header-nav {
     text-align: right;
+    min-width: 64px;
+    max-width: 64px;
+
+    
 }
 .shake {
     writing-mode: sideways-lr;
@@ -262,7 +288,7 @@ aside {
 }
 
 .projet {
-    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "DINdong", Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: grid;
     grid-template-columns: 1fr;
     gap: 12px;
@@ -274,13 +300,19 @@ aside {
 
 
 .a-propos {
-    font-family: "Frutiger", sans-serif;
+    font-family: "DINdong", sans-serif;
     display: grid;
     grid-template-columns: 3(1fr);
     gap: 12px;
     margin: 12px;
     color: #ffffff;
     background-color: none;
+
+}
+
+.a:hover {
+    background-color: green;
+    font-size: larger;
 }
 
 .presentation {
@@ -290,9 +322,20 @@ aside {
     padding-bottom: 15px;
 }
 
+.presentation > div{
+    align-content: start;
+}
+
+.texte-presentation + div{
+    align-content: end;
+   
+}
+
+
+
 .presentation p {
-    font-family: 'Courier New', Courier, monospace, sans-serif;
-    font-size: 12px;
+    font-family: "DINdong", Courier, monospace, sans-serif;
+    font-size: 15px;
     margin-top: 0px;
     margin-bottom: 2px;
     padding-left: 10px;
@@ -305,15 +348,18 @@ aside {
     width: auto;
     height: auto;
     max-height: calc(100vh - 164px);
+    align-content: start;
 }
 
 .col-2-tiers {
-    grid-column: span 1;
+    grid-column: 1;
+
 }
 
 .col-3-tiers {
-    grid-column: span 3;
-}   
+    grid-column: 1;
+} 
+
 
 .grille-1-colonne{
     display:grid;
@@ -327,13 +373,16 @@ aside {
 }
 .grille-3-colonnes{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap:15px;
 }
 .sketch{
     padding-bottom: 13px;
 }
 
+.liens:hover {
+    color: rgb(152, 181, 134);
+}
 
 
 
@@ -356,9 +405,29 @@ aside {
     .col-2-tiers {
         grid-column: span 2;
     }
-    /* .col-3-tiers {
-        grid-column: span 1;
-    } */
+    .col-3-tiers {
+        grid-column: span 2;
+    }
+    .grille-3-colonnes{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+/* Pour grand écran */
+@media (min-width: 1024px) {
+    .projets {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .presentation {
+        grid-template-columns : repeat(3, 1fr);
+    }
+    div.align-en-bas{
+        align-content: end;
+    }
+    .col-3-tiers {
+        grid-column: span 3;
+    }
+
+
 }
 
 #shake:hover{
@@ -382,12 +451,3 @@ aside {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/* Pour grand écran */
-@media (min-width: 1024px) {
-    .projets {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .presentation {
-        grid-template-columns : repeat(3, 1fr);
-    }
-}

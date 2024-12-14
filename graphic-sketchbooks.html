@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloïse Malavielle - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="vachelinofavicon.svg" />
+</head>
+
+<body class="notMoved">
+    <header class="header">
+        <div class="logonom" href="indexen.html" >
+            <div class="logo-container" onclick="playCowSound()">
+                <img class="logovache" src="vachelino.svg" alt="logovache" />
+            </div>
+            <a href="indexen.html">
+                <h1>
+                    éloïse<br>Malavielle
+                </h1>
+            </a>
+            <audio id="cowSound" src="cow-moo.mp3"></audio>
+        </div>
+      
+        <nav class="header-nav">
+            <a class="header.a" href="carnets.html">
+                <img src="en.svg" alt="langue-bouton">
+            </a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <aside>
+            <div class="menu-burger-div">
+                <img class="menu-burger-image" onclick="afficher_menu()" src="menuburger.svg" alt="menu-burger"
+                    id="menu-burger">
+                <div class="recouvrement-noir" id="recouvrement-noir" onmouseleave="masquer_menu()">
+                    <a href="about.html">about</a>
+                    <br>
+                    <a href="contactme.html">contact</a>
+                    <br>
+                    <a href="credit.html">credit</a>
+                </div>
+            </div>
+            <!-- <div class="retour-droits" >
+                <a href="index.html">
+                
+                </a>   
+            </div> -->
+
+            <a class="bouton-retour" href="indexen.html">
+                <img id="shake" src="retour-doigt - 1.svg" alt="retour">
+                <div class="retour-droits hover-text"><h5>home</h5></div>
+            </a>
+        </aside>
+
+            <div class="presentation">
+        <!-- <h2>à propos</h2> -->
+            <div class="texte-presentation">
+                <h3>Graphic Sketchbooks</h3>
+                <h4>4 books A5 format<br>2 books A6 format</h4>
+                <p>I always keep a notebook wherever I go, to fix the sentence in my head, formats calculation, or sketches for my current projects.</p>
+                <p>Here, I offer you more completed notebooks, where I work on drawing, color, collage, art techniques, finally above all it is a way of activating my creativity.</p>            </div>
+        <div class="carnets col-2-tiers">
+            <img src="carnets/carnetpaysagedouble4.webp" alt="carnet">
+        </div>
+
+        <div class="carnets">
+            <img src="carnets/carnetpaysagedouble1.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetpaysagedouble2.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetpaysagedouble3.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetportraitsimple1.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetportraitsimple3.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetportraitsimple5.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetpaysagedouble6.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetpaysagedouble7.webp" alt="carnet">
+        </div>
+        <div class="carnets">
+            <img src="carnets/carnetpaysagedouble8.webp" alt="carnet">
+        </div>
+
+
+
+    
+        
+
+    </main>
+<script src="script.js"></script>
+</body> 
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,62 +9,64 @@
     <link rel="icon" type="image/png" href="vachelinofavicon.svg" />
 </head>
 
-<body>
+<body class="notMoved">
     <header class="header">
-        <div class="logonom" href="index.html" >
+        <div class="logonom" href="indexen.html">
             <div class="logo-container" onclick="playCowSound()">
                 <img class="logovache" src="vachelino.svg" alt="logovache" />
             </div>
-            <a href="index.html">
+            <a href="indexen.html">
                 <h1>
                     éloïse<br>Malavielle
                 </h1>
             </a>
             <audio id="cowSound" src="cow-moo.mp3"></audio>
         </div>
-      
+
         <nav class="header-nav">
-            <a class="header.a" href="pokemon-overrun-art.html">
-                <img src="fr.svg" alt="langue-bouton">
+            <a class="header.a" href="pokemon.html">
+                <img src="en.svg" alt="langue-bouton">
             </a>
         </nav>
-        
+
     </header>
 
     <main>
         <aside>
-
-
-
             <div class="menu-burger-div">
                 <img class="menu-burger-image" onclick="afficher_menu()" src="menuburger.svg" alt="menu-burger"
                     id="menu-burger">
                 <div class="recouvrement-noir" id="recouvrement-noir" onmouseleave="masquer_menu()">
-                    <a href="a-propos.html">à propos</a>
+                    <a href="about.html">about</a>
                     <br>
-                    <a href="contact.html">contact</a>
+                    <a href="contactme.html">contact</a>
                     <br>
-                    <a href="credits.html">crédits</a>
+                    <a href="credit.html">credit</a>
                 </div>
             </div>
+            <!-- <div class="retour-droits" >
+                <a href="index.html">
+                
+                </a>   
+            </div> -->
 
-            <a class="bouton-retour" href="index.html">
+            <a class="bouton-retour" href="indexen.html">
                 <img id="shake" src="retour-doigt - 1.svg" alt="retour">
-                <div class="retour-droits hover-text"><h5>accueil</h5></div>
+                <div class="retour-droits hover-text">
+                    <h5>home</h5>
+                </div>
             </a>
-
         </aside>
-
-        
-
         </aside>
         <div class="presentation">
             <!-- <h2>à propos</h2> -->
             <div class="texte-presentation">
                 <h3>Les Pokémons<br>envahissent l´art</h3>
-                <h4>série d’acryliques sur toile</h4>
+                <h4>Acrylics on canvas<br>Series in progress</h4>
                 <h4>35,2 x 26,8 cm<br>40,8 x 33,2 cm<br>45,8 x 32,8 cm<br>40,8 x 33,2 cm<br>55 x 46 cm</h4>
-                <p>Le principe de cette série est de détourner les tableaux les plus célèbres (culture artistique) en incorporrant un Pokémon (culture populaire) en lien avec la composition du tableau et ainsi créer un oxymore tout en apprenant de plus près la touche des artistes usurpés.</p>
+                <p>The aim of this series is to distort the most famous paintings (artistic culture) by incorporating a
+                    Pokemon (pop culture) in link with the painting’s composition and thus create an visual oxymoron
+                    while learning closer the appropraited artist’s strokes.</p>
             </div>
             <!-- <div class="pokemon">
                 <img src="images/pokemon/pokemon4.webp" alt="tableau pokemon">
@@ -86,21 +88,21 @@
                 <img src="pokemon/pokemon2.webp" alt="tableau pokemon">
             </div>
             <div class="pokemon">
-                <img src="pokemon/pokemon3.webp" alt="tableau pokemon">
+                <img src="pokemon/pokemon6.webp" alt="tableau pokemon">
+            </div>
+            <div class="pokemon">
+                <img class="sketch" src="pokemon/pokemon7.webp" alt="tableau pokemon">
             </div>
             <div class="pokemon">
                 <img class="sketch" src="pokemon/pokemon6.webp" alt="tableau pokemon">
             </div>
             <div class="pokemon">
-                <img class="sketch" src="pokemon/pokemon5.webp" alt="tableau pokemon">
-            </div>
-            <div class="pokemon">
                 <img src="pokemon/pokemon1.webp" alt="tableau pokemon">
             </div>
-        </div>
-            
+
 
     </main>
     <script src="script.js"></script>
-</body> 
+</body>
+
 </html>

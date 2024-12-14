@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,13 +9,13 @@
     <link rel="icon" type="image/png" href="vachelinofavicon.svg" />
 </head>
 
-<body>
+<body class="notMoved">
     <header class="header">
-        <div class="logonom" href="index.html" >
+        <div class="logonom" href="indexen.html" >
             <div class="logo-container" onclick="playCowSound()">
                 <img class="logovache" src="vachelino.svg" alt="logovache" />
             </div>
-            <a href="index.html">
+            <a href="indexen.html">
                 <h1>
                     éloïse<br>Malavielle
                 </h1>
@@ -24,8 +24,8 @@
         </div>
       
         <nav class="header-nav">
-            <a class="header.a" href="the-bipiste.html">
-                <img src="fr.svg" alt="langue-bouton">
+            <a class="header.a" href="bipiste.html">
+                <img src="en.svg" alt="langue-bouton">
             </a>
         </nav>
         
@@ -33,38 +33,36 @@
 
     <main>
         <aside>
-
-
-
             <div class="menu-burger-div">
                 <img class="menu-burger-image" onclick="afficher_menu()" src="menuburger.svg" alt="menu-burger"
                     id="menu-burger">
                 <div class="recouvrement-noir" id="recouvrement-noir" onmouseleave="masquer_menu()">
-                    <a href="a-propos.html">à propos</a>
+                    <a href="about.html">about</a>
                     <br>
-                    <a href="contact.html">contact</a>
+                    <a href="contactme.html">contact</a>
                     <br>
-                    <a href="credits.html">crédits</a>
+                    <a href="credit.html">credit</a>
                 </div>
             </div>
+            <!-- <div class="retour-droits" >
+                <a href="index.html">
+                
+                </a>   
+            </div> -->
 
-            <a class="bouton-retour" href="index.html">
+            <a class="bouton-retour" href="indexen.html">
                 <img id="shake" src="retour-doigt - 1.svg" alt="retour">
-                <div class="retour-droits hover-text"><h5>accueil</h5></div>
+                <div class="retour-droits hover-text"><h5>home</h5></div>
             </a>
-
         </aside>
-
-        
-
         </aside>
         <div class="presentation">
             <!-- <h2>à propos</h2> -->
             <div class="texte-presentation">
-                <h3>Le Bipiste au travail </h3>
-                <h4>2 affiches 60 x 80 cm <br> planches A4 de codes barres transformés <br>affiches A2 à partir des formes extraites <br>édition reliée, mise en page des recherches précédentes</h4>
-                <p>Collecter, rassembler, déformer, extraire, associer les lignes et les chiffres.</p>
-                <p>Construire un langage graphique autour d’un objet du quotidien celui de notre société de consommation, celui qu’on « bip » et qu’on jette.</p>  
+                <h3>The Bipiste at work</h3>
+                <h4>2 posters 60 x 80 cm<br>4 x A4 modified barcodes boards<br>A2 examples poster from the extracted shapes<br>binded edition, layout of all previous research from barcodes</h4>
+                <p>Collect, gather, distort, extract, connect stripes and digit to contruct a graphical language about a daily object, the one which sum up of our consumer society, the one we beep 
+                    (fr : bip) and throw away.</p>  
             </div>
             <div class="posterfinal">
                 <img src="bipiste/bipiste1.webp" alt="image bipiste">
@@ -128,14 +126,15 @@
             </div>
             <div class="edition">
                 <img src="bipiste/bipiste18.webp" alt="image bipiste">
-            </div> 
+            </div>
+      
 
 
 
         </div>
-            
+        
 
     </main>
     <script src="script.js"></script>
-</body> 
-</html>
+    </body> 
+    </html>

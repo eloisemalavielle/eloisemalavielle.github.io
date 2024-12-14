@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloïse Malavielle - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="vachelinofavicon.svg" />
+</head>
+
+<body class="notMoved">
+    <header class="header">
+        <div class="logonom" href="indexen.html" >
+            <div class="logo-container" onclick="playCowSound()">
+                <img class="logovache" src="vachelino.svg" alt="logovache" />
+            </div>
+            <a href="indexen.html">
+                <h1>
+                    éloïse<br>Malavielle
+                </h1>
+            </a>
+            <audio id="cowSound" src="cow-moo.mp3"></audio>
+        </div>
+      
+        <nav class="header-nav">
+            <a class="header.a" href="photo.html">
+                <img src="en.svg" alt="langue-bouton">
+            </a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <aside>
+            <div class="menu-burger-div">
+                <img class="menu-burger-image" onclick="afficher_menu()" src="menuburger.svg" alt="menu-burger"
+                    id="menu-burger">
+                <div class="recouvrement-noir" id="recouvrement-noir" onmouseleave="masquer_menu()">
+                    <a href="about.html">about</a>
+                    <br>
+                    <a href="contactme.html">contact</a>
+                    <br>
+                    <a href="credit.html">credit</a>
+                </div>
+            </div>
+            <!-- <div class="retour-droits" >
+                <a href="index.html">
+                
+                </a>   
+            </div> -->
+
+            <a class="bouton-retour" href="indexen.html">
+                <img id="shake" src="retour-doigt - 1.svg" alt="retour">
+                <div class="retour-droits hover-text"><h5>home</h5></div>
+            </a>
+        </aside>
+        
+        
+            <div class="presentation">
+                <!-- <h2>à propos</h2> -->
+                <div class="texte-presentation">
+                    <h3>Shots </h3>
+                    <h4>Old Numeric Camera Photographs</h4>
+                    <p>selection of photographs, serving as proof of my walks, I like to give to these memories an enigmatic effect where we trace the story behind.</p>                
+                </div>
+                <div class="image1 col-2-tiers">
+                   <img src="photo/photo6.webp" alt="patoue magazine">
+                </div>
+                <div class="photo col-1-tiers">
+                    <img src="photo/photo3.webp" alt="photographie">
+                </div>
+                <div class="photo col-1-tiers">
+                    <img src="photo/photo7.webp" alt="photographie">
+                </div>
+                <div class="photo col-1-tiers">
+                    <img src="photo/photo9.webp" alt="photographie">
+                </div>
+                <div class="photo col-1-tiers">
+                    <img src="photo/photo1.webp" alt="photographie">
+                </div>
+                <div class="photo col-1-tiers">
+                    <img src="photo/photo2.webp" alt="photographie">
+                </div>
+                <div class="photo col-1-tiers">
+                    <img src="photo/photo4.webp" alt="photographie">
+                </div>
+                
+                
+               
+    
+    
+            </div>
+    </main>       
+                
+    <script src="script.js"></script>
+    </body> 
+    </html>
